@@ -2,10 +2,61 @@
           <ul class="nav">
             <li class="nav-item nav-category">Main</li>
             <li class="nav-item">
-              <a class="nav-link" href="../../index.html">
+              <a class="nav-link" href="{{ url('/dashboard') }}">
                 <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span>
                 <span class="menu-title">Dashboard</span>
               </a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url('/customers') }}">
+                <span class="icon-bg"><i class="mdi mdi-account-circle menu-icon"></i></span>
+                <span class="menu-title">Customer</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="icon-bg"><i class="mdi mdi-crosshairs-gps menu-icon"></i></span>
+                <span class="menu-title">Category</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="#">Add Category</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Category List</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url('/customers') }}">
+                <span class="icon-bg"><i class="mdi mdi-account-circle menu-icon"></i></span>
+                <span class="menu-title">Employee</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url('/customers') }}">
+                <span class="icon-bg"><i class="mdi mdi-account-circle menu-icon"></i></span>
+                <span class="menu-title">Supplier</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url('/customers') }}">
+                <span class="icon-bg"><i class="mdi mdi-account-circle menu-icon"></i></span>
+                <span class="menu-title">Attendence</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="icon-bg"><i class="mdi mdi-crosshairs-gps menu-icon"></i></span>
+                <span class="menu-title">Product</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="#">Add Product</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Product List</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Import product</a></li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
